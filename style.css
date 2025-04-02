@@ -9,18 +9,26 @@ body > div {
   justify-content: flex-start;
   align-items: center;
 }
-body > div > meter {
+body > :nth-child(4) > meter {
   border-radius: 0;
   height: 30px;
 }
-body > :nth-child(4) > meter {
-  width: 50px;
+body > :nth-child(5) > progress {
+  border-radius: 0;
+  height: 15px;
+  border: 1px solid rgb(25, 25, 25);
 }
-body > :nth-child(7) > meter {
-  width: 100px;
+body > :nth-child(5) > progress::-webkit-progress-bar {
+  background-color: white;
+}
+body > :nth-child(5) > progress::-webkit-progress-value {
+  background-color: rgb(0, 180, 255);
 }
 body > ul > li {
-  list-style-image: url("./svg/list.svg");
+  list-style: circle;
+}
+body > :nth-child(15) {
+  color: rgb(160, 0, 180);
 }
 
 /*# sourceMappingURL=style.css.map */
